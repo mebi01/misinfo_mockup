@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+
+            header, footer {
+                padding: 1em;
+                height:50px; 
+                color: white;
+                background-color: #2ECC71  ;
+                clear: left;
+                text-align: center;
+                padding: 30px;
+            }
+            .fixbar { /*for keeping the left side fixed
+                overflow: hidden;
+                /*background-color:*/ 
+                position: fixed;
+                width: 100%;
+            }
+
+            div.container {
+                width: 50%;
+
+                padding: 1px;
+                border-right: 1px solid gray;
+            }
+            div.container2 {
+
+                width: 50%;
+                right: 0px;
+                padding: 1px;
+                border-right: 1px solid gray;
+            }
+
+            #form1 {
+                float: left;
+                max-width: 90%;
+                height: 307px;
+                margin: 2px;
+                padding: 1em;
+                text-align: justify;
+                border-right-color: grey;
+
+            }
+            .right {
+                position: absolute;
+                width: 47.5%;
+                /*                height:563px;*/
+                border: 3px solid #73AD21;
+                padding: 10px;
+                right: 3px;
+                top:0px;
+            }
+            html,body {padding:0;margin:0;}
+            .wrap {
+                font:12px Arial, san-serif;
+            }
+            h1.likert-header {
+                padding-left:4.25%;
+                margin:20px 0 0;
+            }
+            form .statement {
+                display:block;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 30px 0 0 4.25%;
+                margin-bottom:10px;
+            }
+            form .likert {
+                list-style:none;
+                width:100%;
+                margin:0;
+                padding:0 0 35px;
+                display:block;
+                border-bottom:2px solid #efefef;
+            }
+            form .likert:last-of-type {border-bottom:0;}
+            form .likert:before {
+                content: '';
+                position:relative;
+                top:11px;
+                left:3%;
+                display:block;
+                background-color:#efefef;
+                height:4px;
+                width:87%;
+            }
+            form .likert li {
+                display:inline-block;
+                width:8%;
+                text-align:center;
+                vertical-align: top;
+
+            }
+            form .likert li input[type=radio] {
+                display:block;
+                position:relative;
+                top:0;
+                left:50%;
+                margin-left:-6px;
+
+            }
+            form .likert li label {width:100%;}
+            form .buttons {
+                margin:30px 0;
+                padding:0 4.25%;
+                text-align:right
+            } 
+            form .buttons button {
+                padding: 5px 10px;
+                background-color: #67ab49;
+                border: 0;
+                border-radius: 3px;
+            }
+            form .buttons .clear {background-color: #e9e9e9;}
+            form .buttons .submit {background-color: #67ab49;} 
+            form .buttons .clear:hover {background-color: #ccc;}
+            form .buttons .submit:hover {background-color: #14892c;} 
+
+        </style>
+    </head>
+    <body>
+        <div class="fixbar">
+            <div class="container">
+                <header>
+                    <h1> Scenario Two: E-Cigarette</h1>
+                </header>
+                <br> 
+
+                <p id="form1" >
+                    Suppose you are trying to give up smoking and you see that many
+                    smokers are using e cigarette (that can be found in the cvs pharmacy and other supermarkets). 
+                    To help yourself, you may search in the a public health forum and get some answers which you can see here:
+
+
+
+                    <br style = “line-height:10px;”><br>
+                    <br>
+
+
+                    <b> Joe </b>: <br> <q> I have always just assumed that they were safer than regular smokes. 
+                        I used it for a while, and would say that they are safer and better than</span> regular ones.
+                        We dont need modern medicine DM. The old fashioned remedies work just fine!</q>
+                    <br style = “line-height:20px;”><br>
+                    <br> 
+                    <br style = “line-height:20px;”><br>
+                    <br> 
+
+
+                </p>
+                <br>
+
+                <footer> <h2> Now answer to the questions at the right side. </h2>
+                </footer>
+            </div>
+        </div>
+
+        <!--the left side: questionnaire-->
+
+         <div class="right">
+            <div class="wrap">
+                <h1 class="likert-header">The Questions</h1>
+                <form action="">
+                    
+                    <label class="statement">1- For this health question, rate to what degree <q>you act</q> to the information provided by this comment?</label>
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label> -5 Extremely ulikely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>0- I am not sure. </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5 Extremely likely</label>
+                        </li>
+                    </ul>
+                    <label class="statement">2- For this health question, rate to what degree you recommend this <q>advice to your family or friends, if you knew that they may have similar question?</q>.</label>
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label> -5 Extremely ulikely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>0- I am not sure. </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5 Extremely likely</label>
+                        </li>
+                    </ul>
+                    <label class="statement">3- For this health question, rate to what degree you <q>forward</q> this message to your acquaintances online, if you knew that they may have similar question?</label>
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label> -5 Extremely ulikely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>0- I am not sure. </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5 Extremely likely</label>
+                        </li>
+                    </ul>
+                    <label class="statement">4- For this health question, to what degree do you think this advice is <q>believable</q>?</label>
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label> -5 Extremely disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>0- I am not sure. </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5 Extremely agree</label>
+                        </li>
+                    </ul>
+                    <label class="statement">5- For this health question, to what degree do you think this advice is <q> understandable</q>?</label>
+
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label> -5 Extremely disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>0- I am not sure. </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5 Extremely agree</label>
+                        </li>
+                    </ul>
+                    <label class="statement">6- For this health question, rate amount of <q>effort/ time</q> that you mad/spent to figure out what is this advice.</label>
+
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label> -5 Extremely disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>0- I am not sure. </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5 Extremely agree</label>
+                        </li>
+                    </ul>
+                    <label class="statement">7- For this health question, to what degree do you think this advice is <q>easy to read</q>?</label>
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label> -5 Extremely disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>-1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>0- I am not sure. </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5 Extremely agree</label>
+                        </li>
+                    </ul>
+                    
+
+                    <div class="buttons">
+                        <button class="clear">Clear</button>
+                        <!--<button class="submit" onclick="window.location.href = 'http://localhost:8383/MisinfoPrototype/03.html'">Submit</button>-->
+                        <input style="padding: 5px" type="button" class="submit" value="Submit/Next" onclick="window.location.href = 'http://localhost:8383/MisinfoPrototype/04.html'" />
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

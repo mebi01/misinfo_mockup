@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <style>
+            #form1 {
+                margin: 20px auto;
+                width: 375px;
+                color: black;
+                height: 500px;
+                text-align: center;
+            }
+            #input1{
+                display: block;
+                margin-bottom: 25px;
+                width: 100%;
+                border: 2px solid green;
+                padding: 10px;
+                font-size: 14px;
+
+            }
+            #submit {
+                height: 45px;
+                width: 109%;
+                border: none;
+                padding: 10px;
+                background: green;
+                color: white;
+                /*                position:relative;
+                                transition: .5s ease;
+                                top: 50%;
+                                left: 10%;*/
+
+            }
+
+        </style>   
+    </head>
+    <body bgcolor="white">            
+
+        <form id="form1">
+            <h1 > Demographic Info </h1>
+            <input id="input1" type="text" placeholder="Date of Birth">
+            <input id="input1" type="email" placeholder="Email (Ub mail)">
+            <input id="input1" type="text" placeholder="Major/ Level">
+            <!--            <input id="input1" type="text"placeholder="How often you use the Internet for getting health advices">-->
+            
+             How often you use the Internet for getting information?
+            <br>
+            <br>
+            <div id="input1">
+                <input type="radio" id="male" name="gender"><label for="male"> Always </label>
+                <input type="radio" id="female" name="gender"><label for ="female"> Often </label> 
+                <input type="radio" id="male" name="gender"><label for="male"> Sometimes </label>
+                <input type="radio" id="male" name="gender"><label for="male"> Rarely </label>
+                <input type="radio" id="male" name="gender"><label for="male"> Never </label>
+
+
+            </div>
+
+            How often you use the Internet for getting health advices?
+            <br>
+            <br>
+            <div id="input1">
+                <input type="radio" id="male" name="gender"><label for="male"> Always </label>
+                <input type="radio" id="female" name="gender"><label for ="female"> Often </label> 
+                <input type="radio" id="male" name="gender"><label for="male"> Sometimes </label>
+                <input type="radio" id="male" name="gender"><label for="male"> Rarely </label>
+                <input type="radio" id="male" name="gender"><label for="male"> Never </label>
+
+
+            </div>
+            <div id="input1">
+
+                <input type="radio" id="male" name="gender"><label for="male"> Male </label>
+                <input type="radio" id="female" name="gender"><label for ="female"> Female </label> 
+            </div>
+            <input id="submit" type="button" class="button button4" value="Submit and Go Ahead!" onclick="window.location.href = 'http://localhost:8383/MisinfoPrototype/02.html'">
+
+
+        </form>
+    </body>
+</html>
